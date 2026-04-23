@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form3.css">
+    <script>
+        let a = "junaid";
+        let b = 34;
+        let call = null;
+        let on = true;
+        let tata;
+        console.log(a, b, call, on, tata );
+        alert( b);
+
+    </script>
+</head>
+<body>
+    <h1>School Admission Form</h1>
+    <form action="post">
+
+       <h2>Student Information</h2>
+
+<label for="fname"><b>First Name</b></label>
+<input type="text" id="fname" name="first_name" required><br>
+
+<label for="mname"><b>Middle Name</b></label>
+<input type="text" id="mname" name="middle_name"><br>
+
+<label for="lname"><b>Last Name</b></label>
+<input type="text" id="lname" name="last_name" required><br>
+
+<label for="dob"><b>Date of Birth</b></label>
+<input type="date" id="dob" name="dob"><br>
+
+<label for="age"><b>Age</b></label>
+<input type="number" id="age" name="age"><br>
+
+<label><b>Gender:</b></label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female<br><br>
+
+<label for="blood"><b>Blood Group</b></label>
+<input type="text" id="blood" name="blood_group"><br>
+
+<label for="nationality"><b>Nationality</b></label>
+<input type="text" id="nationality" name="nationality"><br>
+
+<label for="religion"><b>Religion</b></label>
+<input type="text" id="religion" name="religion"><br>
+
+<label for="aadhaar"><b>Aadhaar Number</b></label>
+<input type="text" id="aadhaar" name="aadhaar" maxlength="12"><br>
+
+<hr>
+
+<h2>Admission Details</h2>
+
+<label for="class"><b>Class Applying For</b></label>
+<input type="text" id="class" name="class"><br>
+
+<label for="year"><b>Academic Year</b></label>
+<input type="text" id="year" name="year"><br>
+
+<label for="prev_school"><b>Previous School Name</b></label>
+<input type="text" id="prev_school" name="prev_school"><br>
+
+<label for="prev_class"><b>Previous Class Attended</b></label>
+<input type="text" id="prev_class" name="prev_class"><br>
+
+<label for="medium"><b>Medium of Instruction</b></label>
+<input type="text" id="medium" name="medium"><br>
+
+<label for="reason"><b>Reason for Leaving</b></label>
+<input type="text" id="reason" name="reason"><br>
+
+<hr>
+
+<h2>Parent/Guardian Information</h2>
+
+<h3>Father's Details</h3>
+
+<label for="father_name"><b>Name</b></label>
+<input type="text" id="father_name" name="father_name"><br>
+
+<label for="father_occ"><b>Occupation</b></label>
+<input type="text" id="father_occ" name="father_occupation"><br>
+
+<label for="father_mobile"><b>Mobile Number</b></label>
+<input type="tel" id="father_mobile" name="father_mobile"><br>
+
+<label for="father_email"><b>Email Address</b></label>
+<input type="email" id="father_email" name="father_email"><br>
+
+<hr>
+
+<h3>Mother's Details</h3>
+
+<label for="mother_name"><b>Name</b></label>
+<input type="text" id="mother_name" name="mother_name"><br>
+
+<label for="mother_mobile"><b>Mobile Number</b></label>
+<input type="tel" id="mother_mobile" name="mother_mobile"><br>
+
+<label for="mother_email"><b>Email Address</b></label>
+<input type="email" id="mother_email" name="mother_email"><br>
+
+<hr>
+
+<h3>Guardian (if applicable)</h3>
+
+<label for="guardian_name"><b>Name</b></label>
+<input type="text" id="guardian_name" name="guardian_name"><br>
+
+<label for="relation"><b>Relation</b></label>
+<input type="text" id="relation" name="relation"><br>
+
+<label for="guardian_contact"><b>Contact Number</b></label>
+<input type="tel" id="guardian_contact" name="guardian_contact"><br>
+
+<hr>
+
+<h2>Address Details</h2>
+
+<label for="addr1"><b>Address Line 1</b></label>
+<input type="text" id="addr1" name="address1"><br>
+
+<label for="city"><b>City</b></label>
+<input type="text" id="city" name="city"><br>
+
+<label for="state"><b>State</b></label>
+<input type="text" id="state" name="state"><br>
+
+<label for="pincode"><b>Pincode</b></label>
+<input type="text" id="pincode" name="pincode"><br>
+
+<hr>
+
+<h2>Transport Details</h2>
+
+<label><b>Require School Transport</b></label>
+<input type="radio" name="transport" value="yes"> Yes
+<input type="radio" name="transport" value="no"> No<br>
+
+<label for="pickup"><b>Pickup Location</b></label>
+<input type="text" id="pickup" name="pickup"><br>
+
+<hr>
+
+<h2>Documents Upload</h2>
+
+<label><b>Birth Certificate</b></label>
+<input type="file" name="birth_certificate"><br>
+
+<label><b>Address Proof</b></label>
+<input type="file" name="address_proof"><br>
+
+<hr>
+
+<label>
+<input type="checkbox" required> Agree to Terms & Conditions
+</label><br>
+
+<label for="signature"><b>Parent Signature</b></label>
+<input type="text" id="signature" name="signature"><br>
+
+<label for="date"><b>Date</b></label>
+<input type="date" id="date" name="date"><br>
+
+<input type="submit" value="Submit Form">
+<input type="reset" value="Reset Form">
+</form>
+</body>
+</html>

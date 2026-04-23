@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="tablecln.css">
+
+<body>
+    
+
+
+<h2>Calculator</h2>
+
+<input type="number" id="number1" placeholder="First Number"><br><br>
+
+<input type="number" id="number2" placeholder="Second Number"><br><br>
+
+<button onclick="add()">Add</button>
+
+<button onclick="subtract()">Subtract</button>
+
+<button onclick="multiply()">Multiply</button>
+
+<button onclick="divide()">Divide</button>
+
+<p id="calcResult"></p>
+<script>
+var arr = [1, 2, 3, 4, 5, 6];
+console.log[arr]
+for(var i=0;i>arr.length;i++)
+{console.log(arr[i])}
+function add() {
+    let a = Number(document.getElementById("number1").value);
+    let b = Number(document.getElementById("number2").value);
+    document.getElementById("calcResult").innerText = "Result: " + (a + b);
+}
+
+function subtract() {
+    let a = Number(document.getElementById("number1").value);
+    let b = Number(document.getElementById("number2").value);
+    document.getElementById("calcResult").innerText = "Result: " + (a - b);
+}
+
+function multiply() {
+    let a = Number(document.getElementById("number1").value);
+    let b = Number(document.getElementById("number2").value);
+    document.getElementById("calcResult").innerText = "Result: " + (a * b);
+}
+
+function divide() {
+    let a = Number(document.getElementById("number1").value);
+    let b = Number(document.getElementById("number2").value);
+    document.getElementById("calcResult").innerText = "Result: " + (a / b);
+}
+
+</script>
+
+</body>
+
+</html>

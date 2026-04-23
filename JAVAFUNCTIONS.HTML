@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.js">
+</head>
+<body>
+    <h1>Welcome to My Tool Website</h1>
+
+<h2>Login</h2>
+
+<input type="text" id="userid" placeholder="Enter User ID"><br><br>
+
+<input type="password" id="password" placeholder="Enter Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<hr>
+
+<h2>Percentage Calculator</h2>
+
+<input type="number" id="obtained" placeholder="Marks Obtained"><br><br>
+
+<input type="number" id="total" placeholder="Total Marks"><br><br>
+------
+<button onclick="calculatePercentage()">Calculate Percentage</button>
+
+<p id="result"></p>
+
+<h2>Age Checker</h2>
+
+<input type="number" id="ageInput" placeholder="Enter Age"><br><br>
+
+<button onclick="checkAge()">Check</button>
+
+<hr>
+
+
+<h2>Pass or Fail</h2>
+
+<input type="number" id="marksInput" placeholder="Enter Marks"><br><br>
+
+<button onclick="checkMarks()">Check Result</button>
+
+<script>
+
+function login() {
+    let user = document.getElementById("userid").value;
+    let pass = document.getElementById("password").value;
+
+    if (user === "admin" && pass === "1234") {
+        alert("Login Successful");
+    } else {
+        alert("Invalid User ID or Password");
+    }
+}
+
+function calculatePercentage() {
+    let obtained = Number(document.getElementById("obtained").value);
+    let total = Number(document.getElementById("total").value);
+
+    let percentage = (obtained / total) * 100;
+
+    document.getElementById("result").innerText =
+        "Percentage: " + percentage.toFixed(2) + "%";
+}
+function checkAge() {
+    let age = document.getElementById("ageInput").value;
+
+    if (age >= 18) {
+        alert("You can vote");
+    } else {
+        alert("Too young");
+    }
+}
+
+function checkMarks() {
+    let marks = document.getElementById("marksInput").value;
+
+    if (marks <= 50) {
+        alert("Pass");
+    } else {
+        alert("Fail");
+    }
+}
+
+var arr = [1, 2, 3, 4, 5, 6];
+
+console.log(arr);
+
+for (var i = 7; i > arr.length; i++) {
+  console.log(arr[i]);
+}
+//JAVAfunction.css//
+</script>
+</body>
+</html>

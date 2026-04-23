@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook</title>
+    <style>
+        /* SIMPLE CSS - EASY TO UNDERSTAND */
+        body {
+            background: #f0f2f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        .logo {
+            color: #1877f2;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #1877f2;
+            outline: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background: #166fe5;
+        }
+
+        .forgot {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .or {
+            margin: 20px 0;
+            position: relative;
+            color: #8b949e;
+        }
+
+        .or::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #ddd;
+        }
+
+        .or span {
+            background: white;
+            padding: 0 10px;
+        }
+
+        .create-btn {
+            width: 100%;
+            padding: 12px;
+            background: #42b883;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <!-- FACEBOOK LOGO -->
+    <div class="logo">f</div>
+    
+    <!-- LOGIN FORM -->
+    <form>
+        <input type="email" placeholder="Email or Phone Number" required>
+        <input type="password" placeholder="Password" required>
+        <a href="#" class="forgot">Forgot Password?</a>
+        <button type="submit" class="login-btn">Log In</button>
+    </form>
+
+    <!-- DIVIDER -->
+    <div class="or">
+        <span>or</span>
+    </div>
+
+    <!-- CREATE ACCOUNT BUTTON -->
+    <button class="create-btn">Create New Account</button>
+</div>
+
+</body>
+</html>
+
+
+
+<script>
+let age = 13;
+if (age >= 18) {
+    console.log("You can vote");
+} else {
+    console.log("You cannot vote");
+}
+let salary = 40000;
+
+if (salary >= 30000 && salary <= 70000) {
+    console.log("Good salary range");
+} else {
+    console.log("Salary out of range");
+}   
+let marks = 75;
+
+if (marks <= 50) {
+    console.log("Needs improvement");
+} else {
+    console.log("Good performance");
+}
+</script>

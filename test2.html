@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+     <script src="new.js"></script>
+</head>
+<body>
+
+<form onsubmit="return false;">
+    <h2>Result</h2>
+
+    <div>                                   
+        <label>Enter score</label>
+        <input id="score" placeholder="Enter score"><br><br>
+
+        <button onclick="check()">Check</button>
+    </div>
+</form>
+
+<h3 id="result"></h3>
+function check() {
+    let score = document.getElementById("score").value;
+
+    if (score >= 50) {
+        document.getElementById("result").innerHTML = "Pass";
+    } else {
+        document.getElementById("result").innerHTML = "Fail";
+    }
+}
+
+
+
+
+</body>
+</html>
+

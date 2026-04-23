@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="id.css">
+</head>
+<body>
+
+<form method="get">
+    <h2>Facebook Login</h2>
+
+    <div>
+        <label for="userid" class="A">User ID</label>
+        <input id="userid" placeholder="Enter User ID"><br><br>
+
+        <label for="password" class="B">Password</label>
+        <input id="password" type="password" placeholder="Enter Password"><br><br>
+
+<a href="facebookpg2.html" class="login button" id="a" >login</a>
+
+    </div>
+</form>
+
+<script>
+   let A = 50;
+    let B = 13;
+    let C = 50 - 12;
+    let X = 35; let Y = 56;
+    console.log(A,B,C);
+
+    console.log(A*B);  
+       console.log(A / B);  
+       console.log(X > Y);  
+       console.log(X < Y);  
+        console.log(X >= Y);
+   console.log(X <= Y);   
+     console.log(X == Y);
+
+ let age = 65;
+ if (age > 18 && age < 60) {   
+     console.log("You can work"); } 
+     else {     console.log("Not in working age"); } 
+     let marks = 40;
+
+ if (marks >= 35) {  
+       console.log("Pass");
+} else {     console.log("Fail"); }
+
+
+
+
+
+
+    function login() {
+    let user = document.getElementById("userid").value;
+    let pass = document.getElementById("password").value;
+     if (user === "admin" && pass === "1234") {         alert("Login Successful");     } else {         alert("Invalid User ID or Password");     }  }
+
+
+var i = 0;
+
+while (i <= 8) {
+  console.log(i);
+  i++;
+}
+
+        
+    
+
+
+</script>
+
+</body>
+</html>
+
+
