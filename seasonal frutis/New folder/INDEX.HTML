@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotless Fruits India Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-strip">
+    <span>Fresh fruits delivered in Mumbai, Thane and Navi Mumbai</span>
+    <span>Call & WhatsApp: +91 7304982380</span>
+  </div>
+
+  <header class="site-header">
+    <button class="menu-button" aria-label="Open menu">☰</button>
+    <a class="brand" href="#">
+      <span class="brand-mark">SFI</span>
+      <span>
+        <strong>Spotless Fruits</strong>
+        <small>India</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#fresh-fruits">Fresh Fruits</a>
+      <a href="#berries">Fresh Berry</a>
+      <a href="#dry-fruits">Dry Fruits</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="cart-button" id="cartOpen" aria-label="Open cart">
+        <span>Cart</span>
+        <b id="cartCount">0</b>
+      </button>
+    </div>
+  </header>
+
+  <section class="search-panel" id="searchPanel" aria-label="Search products">
+    <input id="searchInput" type="search" placeholder="Search mango, berry, dry fruit...">
+  </section>
+
+  <main id="home">
+    <section class="category-rail" aria-label="Fruit categories">
+      <a href="#seasonal"><img src="https://www.spotlessfruits.com/cdn/shop/files/InstagramFollowers-InstagramPost_1_1000x1000.png?v=1738153187" alt="Mango"><span>Mango</span></a>
+      <a href="#fresh-fruits"><img src="https://www.spotlessfruits.com/cdn/shop/files/HoneyPineapple-SpotlessFruitsIndia_1000x1000.png?v=1732181719" alt="Pineapple"><span>Imported</span></a>
+      <a href="#berries"><img src="https://www.spotlessfruits.com/cdn/shop/products/FreshBlueberry-SpotlessFruitsIndia_1000x1000.png?v=1624076971" alt="Blueberry"><span>Berries</span></a>
+      <a href="#fresh-fruits"><img src="https://www.spotlessfruits.com/cdn/shop/files/WaterChestnut-SpotlessFruitsIndia_2080dc3d-9a76-429a-b153-df85d2e6af09_1000x1000.png?v=1723350530" alt="Water chestnut"><span>Seasonal</span></a>
+      <a href="#dry-fruits"><img src="https://www.spotlessfruits.com/cdn/shop/files/KIMIADATES-SPOTLESSFRUITSINDIA_1000x1000.png?v=1726494207" alt="Dates"><span>Dry Fruits</span></a>
+      <a href="#today"><img src="https://www.spotlessfruits.com/cdn/shop/files/PinkGuava-SpotlessFruitsIndia_1000x1000.png?v=1723350424" alt="Guava"><span>Deals</span></a>
+    </section>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Premium fruit store</p>
+        <h1>Buy Fresh Fruits Online</h1>
+        <p>Seasonal, imported and premium fruits delivered to homes across Mumbai, Navi Mumbai and Thane.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#seasonal">Shop seasonal fruits</a>
+          <a class="secondary-link" href="#fresh-fruits">View products</a>
+        </div>
+      </div>
+      <div class="hero-product">
+        <img src="https://www.spotlessfruits.com/cdn/shop/files/InstagramFollowers-InstagramPost_1_1000x1000.png?v=1738153187" alt="Alphonso Mango box">
+        <div>
+          <span>Today's Deal</span>
+          <strong>Alphonso Mango - 1 Box</strong>
+          <p><del>Rs. 2,100.00</del> Rs. 1,899.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="store-section" id="seasonal">
+      <div class="section-heading">
+        <h2>Seasonal Fruits Available Now</h2>
+        <a href="#fresh-fruits">View All Products</a>
+      </div>
+      <div class="product-grid" id="seasonalGrid"></div>
+    </section>
+
+    <section class="store-section muted-section" id="fresh-fruits">
+      <div class="section-heading">
+        <h2>Premium Fruits Available Now</h2>
+        <a href="#berries">Fresh Berry</a>
+      </div>
+      <div class="product-grid" id="premiumGrid"></div>
+    </section>
+
+    <section class="deal-band" id="today">
+      <div>
+        <p class="kicker">Today's Deals</p>
+        <h2>Handpicked offers for same-day cravings</h2>
+        <p>Use this clone as a polished storefront preview. Cart actions are front-end only.</p>
+      </div>
+      <div class="countdown" aria-label="Deal countdown">
+        <span><b id="days">12</b>days</span>
+        <span><b id="hours">06</b>hours</span>
+        <span><b id="minutes">24</b>minutes</span>
+        <span><b id="seconds">18</b>seconds</span>
+      </div>
+    </section>
+
+    <section class="store-section" id="berries">
+      <div class="section-heading">
+        <h2>Fresh Berries</h2>
+        <a href="#contact">Ask availability</a>
+      </div>
+      <div class="product-grid" id="berriesGrid"></div>
+    </section>
+
+    <section class="store-section muted-section" id="dry-fruits">
+      <div class="section-heading">
+        <h2>Dry Fruits</h2>
+        <a href="#contact">Bulk orders</a>
+      </div>
+      <div class="product-grid" id="dryGrid"></div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div>
+        <p class="kicker">Newsletter</p>
+        <h2>Sign Up & Get Offer</h2>
+        <p>Receive offers and gift vouchers directly in your inbox.</p>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Spotless Fruits India</strong>
+      <p>Fresh fruits, imported fruits, berries, dry fruits and seasonal specials.</p>
+    </div>
+    <ul>
+      <li><a href="#fresh-fruits">Fresh Fruits</a></li>
+      <li><a href="#seasonal">Premium Mangoes</a></li>
+      <li><a href="#berries">Fresh Berries</a></li>
+      <li><a href="#dry-fruits">Dry Fruits</a></li>
+    </ul>
+    <ul>
+      <li>care@spotlessfruits.com</li>
+      <li>+91 7304982380</li>
+      <li>Mumbai, India</li>
+    </ul>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="icon-button" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your cart is currently empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div><span>Subtotal</span><strong id="cartTotal">Rs. 0.00</strong></div>
+      <small>Shipping & taxes calculated at checkout</small>
+      <button class="checkout-button">Checkout</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="toast" id="toast">Product added to cart</div>
+  <script src="script.js"></script>
+</body>
+</html>

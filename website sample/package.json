@@ -1,0 +1,17 @@
+{
+  "name": "starpoint-media-me",
+  "version": "1.0.0",
+  "description": "Two-page advertising agency website for Starpointmediame.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "advertising",
+    "agency",
+    "dubai",
+    "social-media"
+  ],
+  "author": "Starpointmediame",
+  "license": "MIT"
+}

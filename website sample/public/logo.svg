@@ -1,0 +1,19 @@
+<svg width="260" height="64" viewBox="0 0 260 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Starpointmediame logo</title>
+  <desc id="desc">A bright star point mark with the Starpointmediame wordmark.</desc>
+  <rect width="260" height="64" rx="18" fill="#07100F"/>
+  <path d="M34 8L39.9 25.7L58.6 25.9L43.6 37.1L49.2 55L34 44.1L18.8 55L24.4 37.1L9.4 25.9L28.1 25.7L34 8Z" fill="url(#paint0_linear)"/>
+  <path d="M34 19.8L37.4 30.1L48.3 30.2L39.5 36.7L42.8 47.1L34 40.8L25.2 47.1L28.5 36.7L19.7 30.2L30.6 30.1L34 19.8Z" fill="#07100F"/>
+  <text x="73" y="30" fill="#F7FFF8" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="0">Starpoint</text>
+  <text x="73" y="48" fill="#26F7A7" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="0">mediame</text>
+  <path d="M207 17H240" stroke="#26F7A7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M218 32H246" stroke="#FFB000" stroke-width="4" stroke-linecap="round"/>
+  <path d="M207 47H234" stroke="#FF3D81" stroke-width="4" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="9.4" y1="8" x2="59" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#26F7A7"/>
+      <stop offset="0.48" stop-color="#FFB000"/>
+      <stop offset="1" stop-color="#FF3D81"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,18 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#07100F"/>
+  <linearGradient id="g" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#163D36"/>
+    <stop offset="0.55" stop-color="#12161E"/>
+    <stop offset="1" stop-color="#07100F"/>
+  </linearGradient>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <path d="M210 850L365 150L520 850H210Z" fill="#0A1818"/>
+  <path d="M470 850L620 260L770 850H470Z" fill="#102725"/>
+  <path d="M760 850L930 95L1100 850H760Z" fill="#081314"/>
+  <path d="M1080 850L1238 235L1395 850H1080Z" fill="#102725"/>
+  <rect x="930" y="265" width="405" height="235" rx="22" fill="#07100F" stroke="#26F7A7" stroke-width="8"/>
+  <rect x="970" y="310" width="235" height="38" rx="10" fill="#F7FFF8"/>
+  <rect x="970" y="382" width="300" height="30" rx="10" fill="#FFB000"/>
+  <rect x="970" y="438" width="190" height="30" rx="10" fill="#FF3D81"/>
+  <path d="M0 705C216 620 420 615 610 690C840 780 1080 780 1600 635V900H0V705Z" fill="#07100F"/>
+</svg>
