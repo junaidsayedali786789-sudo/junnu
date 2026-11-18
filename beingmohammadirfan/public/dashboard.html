@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SUPPOREM Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body class="dashboard-body">
+    <header class="dashboard-header">
+      <a class="brand compact" href="/">
+        <span class="brand-mark">
+          <span class="mother-shape"></span>
+          <span class="child-shape"></span>
+          <span class="heart-dot">&hearts;</span>
+        </span>
+        <span>
+          <strong>SUPPOREM<span>.org</span></strong>
+          <small>Donation Dashboard</small>
+        </span>
+      </a>
+      <a class="dashboard-link" href="/">Open Website</a>
+    </header>
+
+    <main class="dashboard-main">
+      <section class="dashboard-login" id="tokenPanel">
+        <label>
+          Dashboard token
+          <input id="adminToken" type="password" placeholder="Only needed when ADMIN_DASHBOARD_TOKEN is set">
+        </label>
+        <button id="saveToken" type="button">Load Dashboard</button>
+      </section>
+
+      <section class="metrics-grid" aria-label="Donation metrics">
+        <article>
+          <span>Total Raised</span>
+          <strong id="totalRaised">Rs 0</strong>
+        </article>
+        <article>
+          <span>Paid Donations</span>
+          <strong id="paidDonations">0</strong>
+        </article>
+        <article>
+          <span>All Donation Attempts</span>
+          <strong id="allDonations">0</strong>
+        </article>
+        <article>
+          <span>Created / Pending</span>
+          <strong id="pendingDonations">0</strong>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="dashboard-panel">
+          <h1>Recent Donations</h1>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Donor</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Purpose</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody id="recentRows">
+                <tr><td colspan="5">Loading dashboard...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="dashboard-panel">
+          <h2>Support by Purpose</h2>
+          <div class="category-bars" id="categoryBars"></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SUPPOREM.org | BeingMohammedIrfan Trust</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta
+      name="description"
+      content="SUPPOREM.org donation website for education, medical aid, food support, and community help."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="SUPPOREM home">
+        <span class="brand-mark">
+          <span class="mother-shape"></span>
+          <span class="child-shape"></span>
+          <span class="heart-dot">&hearts;</span>
+        </span>
+        <span>
+          <strong>SUPPOREM<span>.org</span></strong>
+          <small>Powered by BeingMohammedIrfan Trust</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#stories">Stories</a>
+        <a href="#work">Our Work</a>
+        <a href="#transparency">Transparency</a>
+        <a href="#contact">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <button class="donate-top" type="button" data-open-donate data-purpose="General donation">
+        <span>&hearts;</span> Donate Now
+      </button>
+    </header>
+
+    <!-- <main id="home"> -->
+      <!-- <section class="hero"> -->
+        <!-- <div class="hero-photo"> -->
+          <!-- <img src="C:\Users\hp\OneDrive\Documents\Desktop\beingmohammadirfan\ChatGPT Image Jul 10, 2026, 03_27_35 AM.png" > -->
+        <div id="heroSlider" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+            <img src="images/family2.jpg" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+            <img src="images/family3.jpg" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+            <img src="images/family4.jpg" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+            <img src="images/family5.jpg" class="d-block w-100">
+        </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#heroSlider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#heroSlider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+
+
+
+        </div>
+        <div class="hero-message">
+          <p class="eyebrow">One support. Many smiles.</p>
+          <h1>Different Faiths. Same Struggle. <span>One Dream.</span></h1>
+          <div class="divider"><span>&hearts;</span></div>
+          <p>
+            We stand with widowed and divorced mothers from all communities who are
+            fighting every day to educate their children and build a better tomorrow.
+          </p>
+          <button class="primary-btn" type="button" data-open-donate data-purpose="Hero donation">
+            <span>&hearts;</span> Donate Now
+          </button>
+          <p class="script-note">Your support can change a life forever.</p>
+        </div>
+      </section>
+
+      <section class="promise-bar" aria-label="Support highlights">
+        <article>
+          <span class="line-icon">01</span>
+          <strong>One Community</strong>
+          <small>One Humanity</small>
+        </article>
+        <article>
+          <span class="line-icon">02</span>
+          <strong>Educate a Child</strong>
+          <small>Empower a Generation</small>
+        </article>
+        <article>
+          <span class="line-icon">03</span>
+          <strong>Small Help</strong>
+          <small>Big Change</small>
+        </article>
+        <article>
+          <span class="line-icon">04</span>
+          <strong>One Support</strong>
+          <small>Many Smiles</small>
+        </article>
+      </section>
+
+      <section class="layout-grid" id="work">
+        <div class="main-column">
+          <section class="categories">
+            <h2>Our Categories</h2>
+            <div class="heart-row">&bull; &hearts; &bull;</div>
+            <div class="category-grid">
+              <article class="category-card medical">
+                <div class="category-head">
+                  <span class="category-icon">+</span>
+                  <h3>Medical Aid</h3>
+                </div>
+                <p>We help underprivileged families with medicines, treatments, hospital bills, and emergencies.</p>
+                <div class="image-slot medical-img" aria-hidden="true"></div>
+                <button type="button" data-open-donate data-purpose="Medical aid">Contribute</button>
+              </article>
+
+              <article class="category-card food">
+                <div class="category-head">
+                  <span class="category-icon">=</span>
+                  <h3>Food for Needy</h3>
+                </div>
+                <p>We provide nutritious meals and ration support for families, orphans, and daily wage workers.</p>
+                <div class="image-slot food-img" aria-hidden="true"></div>
+                <button type="button" data-open-donate data-purpose="Food support">Contribute</button>
+              </article>
+
+              <article class="category-card sadaqa">
+                <div class="category-head">
+                  <span class="category-icon">Rs</span>
+                  <h3>Sadqas & Donations</h3>
+                </div>
+                <p>Your Sadqa, Zakat, and donations bring hope, dignity, and a better life to those in need.</p>
+                <div class="image-slot sadaqa-img" aria-hidden="true"></div>
+                <button type="button" data-open-donate data-purpose="Sadqa and donations">Contribute</button>
+              </article>
+            </div>
+          </section>
+
+          <section class="about-band" id="about">
+            <div class="round-logo">
+              <span class="mother-shape"></span>
+              <span class="child-shape"></span>
+              <span class="heart-dot">&hearts;</span>
+            </div>
+            <div>
+              <h2>About BeingMohammedIrfan Trust</h2>
+              <p>
+                We are a non-profit trust working for the welfare of the underprivileged in
+                education, healthcare, food, and humanity. SUPPOREM is our initiative to support
+                widowed and divorced mothers and their children in building a better tomorrow.
+              </p>
+            </div>
+          </section>
+
+          <section class="impact-strip" id="mission">
+            <h2>What Your Support Can Do</h2>
+            <div class="impact-items">
+              <span>Pay school fees for children</span>
+              <span>Provide books, uniforms, and stationery</span>
+              <span>Support medical treatments</span>
+              <span>Provide food and essentials</span>
+              <span>Support widows and their children</span>
+              <span>Bring hope and change lives</span>
+            </div>
+          </section>
+        </div>
+
+        <aside class="donation-panel" aria-label="Donation information">
+          <h2>Be the Reason for Someone's Smile</h2>
+          <button class="wide-donate" type="button" data-open-donate data-purpose="Smile campaign">
+            <span>&hearts;</span> Donate Now
+          </button>
+          <p>Scan and donate with any UPI app</p>
+          <div><img src="image.png" id="qrPreview">
+            <span>QR</span>
+            <small>Generated after entering an amount</small>
+          </div>
+          <div class="upi-box">
+            <small>Or pay using UPI ID</small>
+            <strong>myselfshaikh07-1@okhdfcbank</strong>
+            <span>BeingMohammedIrfan Trust</span>
+          </div>
+          <a class="phone-box" href="tel:9167792470">
+            <span>Call for help or information</span>
+            <strong>9167792470</strong>
+          </a>
+        </aside>
+      </section>
+
+      <section class="story-band" id="stories">
+        <h2>Stories of Support</h2>
+        <div class="story-grid">
+          <article>
+            <strong>Education first</strong>
+            <p>Every contribution helps keep a child in school with fees, books, and uniforms.</p>
+          </article>
+          <article>
+            <strong>Care in crisis</strong>
+            <p>Emergency medical support gives families room to breathe when bills arrive suddenly.</p>
+          </article>
+          <article>
+            <strong>Dignity at home</strong>
+            <p>Ration and essential kits help mothers protect their children through difficult months.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="transparency" id="transparency">
+        <h2>Transparency</h2>
+        <p>
+          The website records every online donation with amount, receipt, status, and payment reference.
+          Trustees can review the live dashboard for recent support and total paid donations.
+        </p>
+        <a href="dashboard.html">Open Dashboard</a>
+      </section>
+    </main>
+
+      <footer class="site-footer" id="contact"> 
+      <span>Follow Us: Facebook Instagram YouTube WhatsApp</span> 
+       <span>&copy; 2026 SUPPOREM.org | Powered by BeingMohammedIrfan Trust | All Rights Reserved</span> 
+    </footer> 
+
+    <dialog class="donation-modal" id="donationModal">
+      <form class="modal-card" id="donationForm" method="dialog">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close donation form">x</button>
+        <h2>Complete Your Donation</h2>
+        <p>Choose checkout for card, UPI, wallet, or netbanking. Choose QR to generate a UPI QR code.</p>
+        <input type="hidden" id="donationPurpose" name="message" value="General donation">
+
+        <label>
+          Full name
+          <input id="donorName" name="donorName" maxlength="80" placeholder="Kind supporter">
+        </label>
+
+        <div class="form-row">
+          <label>
+            Email
+            <input id="email" name="email" type="email" maxlength="120" placeholder="you@example.com">
+          </label>
+          <label>
+            Phone
+            <input id="phone" name="phone" maxlength="20" placeholder="9876543210">
+          </label>
+        </div>
+
+        <label>
+          Amount in INR
+          <input id="amount" name="amount" type="number" min="10" max="500000" value="501" required>
+        </label>
+
+        <div class="quick-amounts" aria-label="Quick donation amounts">
+          <button type="button" data-amount="101">101</button>
+          <button type="button" data-amount="501">501</button>
+          <button type="button" data-amount="1100">1100</button>
+          <button type="button" data-amount="5000">5000</button>
+        </div>
+
+        <div class="modal-actions">
+          <button class="primary-btn" type="submit" data-mode="checkout">Pay Online</button>
+          <button class="secondary-btn" type="submit" data-mode="qr">Generate UPI QR</button>
+        </div>
+
+        <div class="payment-result" id="paymentResult" role="status" aria-live="polite"></div>
+      </form>
+    </dialog>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $('#heroSlider').carousel({
+        interval: 3000,
+        pause: false
+    });
+</script>
+  </body>
+</html>
